@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rifa Escolar - Viaje de Fin de Curso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header id="sticky-header">
+        <div class="container">
+            <a href="index.html">
+                <h5 data-i18n="schoolRaffle">Rifa Escolar</h5>
+            </a>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>
+                    <li><a href="team.html" data-i18n="aboutUs">Sobre nosotros</a></li>
+                    <li><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
+                    <li><a id="languageToggle" aria-label="Toggle Language">🌐 ES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <canvas id="canvas" style="position: absolute;"></canvas>
+        <section class="mt-50">
+            <h2>¡Felicidades al Ganador del Sorteo!</h2>
+            <p>Nos complace anunciar que tenemos un ganador del sorteo, gracias a tu apoyo, esta iniciativa ha sido un
+                éxito, acercándonos a nuestra meta de financiar el viaje de fin de curso.</p>
+            <h2>Boleto </h2>            
+        </section>
+        <section class="mt-50">
+            <h1> <span class="winner"> 0 0 0 </span> </h1>
+            <h2>ganador del sorteo</h2>
+            <p>¡Enhorabuena! Te has llevado uno de nuestros grandes premios.Intentaremos contactarte durante las
+                próximas 72 horas, o puedes comunicarte con nosotros a través del correo electrónico. Recuerda presentar
+                tu boleto ganador o estar registrado en el talonario del vendedor como respaldo.</p>
+        </section>
+        <section class="mt-50">
+            <h2>A todos los participantes</h2>
+            <p>Gracias por tu apoyo y por participar en la rifa. Sin ti, no habría sido posible. Esperamos que hayas
+                disfrutado de la experiencia y que te animes a participar en futuras rifas.</p>            
+        </section>
+        <section class="mt-50" style="margin-bottom: 35px;">
+            <h2>¡Gracias por creer en esta iniciativa y enhorabuena al ganador!</h2>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="sticky-footer">
+        <div class="footer-content">
+            <p><a href="https://www.iestorrealmenara.es/">Instituto de Educación Secundaria Torre Almenara</a></p>
+            <nav>
+                <a href="faq.html" data-i18n="faq">Preguntas frecuentes</a>
+                <a href="terms.html" data-i18n="terms">Terminos y condiciones</a>
+                <a href="ies.html" data-i18n="contactUs">Contáctanos</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/languageSwitcher.js"></script>
+    <script src="js/confetti.js"></script>
+</body>
+
+</html>

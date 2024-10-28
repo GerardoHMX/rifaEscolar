@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rifa Escolar - Viaje de Fin de Curso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header id="sticky-header">
+        <div class="container">
+            <a href="index.html"><h5 data-i18n="schoolRaffle">Rifa Escolar</h5></a>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>
+                    <li><a href="team.html" data-i18n="aboutUs">Sobre nosotros</a></li>
+                    <li><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
+                    <li><a id="languageToggle" aria-label="Toggle Language">🌐 ES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+ 
+        <section>
+            <h2 data-i18n="terms">Terminos y Condiciones</h2>            
+            <p>
+                <b data-i18n="acceptability">1. Aceptación de los Términos de Uso</b><br>
+                <span data-i18n="acceptabilityDesc">Al acceder a esta página web, aceptas cumplir con los términos y condiciones de uso aquí expuestos. Si no estás de acuerdo con estos términos, te pedimos que no utilices este sitio.</span>
+            </p>
+            <p>
+                <b data-i18n="objective">2. Objetivo del Sitio Web</b><br>
+                <span data-i18n="objectiveDesc">Este sitio tiene como objetivo proporcionar información detallada sobre la rifa escolar, incluyendo:</span>
+                <ul class="terms">
+                    <li data-i18n="objective1">Información sobre el propósito de la rifa.</li>
+                    <li data-i18n="objective2">Reglas de participación y compra de boletos.</li>
+                    <li data-i18n="objective3">Detalles sobre los premios y el proceso de sorteo.</li>
+                    <li data-i18n="objective4">Anuncios del ganador y procedimientos para reclamar los premios.</li>
+                </ul>
+            </p>
+            <p>
+                <b data-i18n="use">3. Uso de la Información del Sitio Web</b><br>
+                <span data-i18n="useDesc">Toda la información proporcionada en esta página es de uso informativo y personal únicamente. No está permitido reproducir, distribuir ni utilizar la información del sitio para fines comerciales sin el consentimiento previo y por escrito del IES Torre Almenara.</span>
+            </p>
+            <p>
+                <b data-i18n="contents">4. Actualización de Contenidos</b><br>
+                <span data-i18n="contentsDesc">El IES Torre Almenara se reserva el derecho de modificar, actualizar o eliminar cualquier contenido en esta página web sin previo aviso. Cualquier cambio en los términos y condiciones será notificado a través de este sitio.</span>
+            </p>
+            <p>
+                <b data-i18n="ownership">5. Propiedad Intelectual</b><br>
+                <span data-i18n="ownershipDesc">Todo el contenido de esta página web, incluyendo textos, imágenes, gráficos, logotipos y diseño, es propiedad del IES Torre Almenara o ha sido autorizado para su uso. Está prohibida la copia, modificación o distribución de estos contenidos sin autorización.</span>
+            </p>
+            <p>
+                <b data-i18n="protection">6. Protección de Datos Personales</b><br>
+                <span data-i18n="protectionDesc">La información personal recopilada a través de este sitio, como nombres, correos electrónicos y números de teléfono, se utilizará exclusivamente para la gestión de la rifa y la comunicación con los ganadores. Todos los datos serán tratados de acuerdo con la normativa de protección de datos vigente y serán eliminados una vez concluido el evento y entregados los premios.</span>
+            </p>
+            <p>
+                <b data-i18n="links">7. Enlaces a Sitios Externos</b><br>
+                <span data-i18n="linksDesc">Esta página web puede contener enlaces a otros sitios web que no son gestionados por el IES Torre Almenara. No somos responsables de los contenidos ni de las prácticas de privacidad de estos sitios externos.</span>
+            </p>
+            <p>
+                <b data-i18n="disclaimer">8. Limitación de Responsabilidad</b><br>
+                <span data-i18n="disclaimerDesc">El IES Torre Almenara no se hace responsable por errores u omisiones en el contenido del sitio web, ni por cualquier daño directo o indirecto que pueda derivarse del uso de este sitio. Los visitantes son responsables de verificar la precisión y actualidad de la información proporcionada.</span>
+            </p>
+            <p>
+                <b data-i18n="conditions">9. Condiciones para Participar en la Rifa</b><br>
+                <span data-i18n="conditionsDesc">Para participar en la rifa, los usuarios deben aceptar los términos y condiciones específicos de la rifa, los cuales están disponibles en la sección correspondiente de esta página. El IES Torre Almenara se reserva el derecho de descalificar a cualquier participante que incumpla estas normas.</span>
+            </p>
+            <p>
+                <b data-i18n="cookies">10. Política de Cookies</b><br>
+                <span data-i18n="cookiesDesc">Este sitio web NO utiliza cookies para mejorar la experiencia de navegación.</span> 
+            </p>
+            <p>
+                <b data-i18n="contact">11. Contacto</b><br>
+                <span data-i18n="contactDesc">Para cualquier consulta relacionada con estos términos y condiciones o con la rifa escolar, puedes comunicarte con nosotros a través de los medios de contacto indicados en la página.</span>
+            </p>
+
+            <a class="" href="index.html"> <span class="flecha">←</span> Ir al inicio</a>
+
+        </section>        
+  
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="sticky-footer">
+        <div class="footer-content">
+            <p>Instituto de Educación Secundaria Torre Almenara</p>
+            <nav>
+                <a href="faq.html" data-i18n="faq">Preguntas frecuentes</a>
+                <a href="team.html" data-i18n="aboutUs">Sobre nosotros</a>
+                <a href="ies.html" data-i18n="contactUs">Contáctanos</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/languageSwitcher.js"></script> 
+</body>
+
+</html>

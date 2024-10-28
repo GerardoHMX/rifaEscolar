@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rifa Escolar - Viaje de Fin de Curso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header id="sticky-header">
+        <div class="container">
+            <a href="index.html"><h5 data-i18n="schoolRaffle">Rifa Escolar</h5></a>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>
+                    <li><a href="team.html" data-i18n="aboutUs">Sobre nosotros</a></li>
+                    <li><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
+                    <li><a id="languageToggle" aria-label="Toggle Language">🌐 ES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+
+        <section>
+            <img src="/img/Profesores.png" style="margin-top: -2.8rem;"> 
+            <div class="container-ies text-center">
+                <img src="/img/logoIES.png" >
+                <span >I.E.S. Torre Almenara</span>
+            </div>  
+            <section class="colums-container mt-30">
+                <section class="column pr-20">
+                    <span data-i18n="anyQuestions">Si tienes alguna duda o consulta, no dudes en contactarnos.</span>
+                    <br><br>
+                    <span data-i18n="writeUsAt">Puedes escribirnos a nuestro</span>
+                    <a class="text-center" data-i18n="email" href="mailto:juan.huizar@2hsoftware.com.mx">
+                        correo electrónico
+                    </a>
+                    <p data-i18n="visitUs">
+                        También puedes visitarnos en nuestro Instituto en la siguiente dirección: Urb. El Limonar 63, 29649 La Cala de Mijas, Málaga, España.
+                    </p>
+                    <p>
+                        <span data-i18n="seeTerms">Consulta los Términos y Condiciones de Uso de la Página Web de la Rifa Escolar del IES Torre Almenara</span> <a href="terms.html" data-i18n="here">aquí</a>.
+                    </p>
+                </section>
+                <section class="column" id="map-container">
+                    <div id="map"></div>
+                </section>
+            </section>             
+            
+        </section>
+
+        <section class="text-center">
+            <p data-i18n="followUs">Síguenos en las redes sociales del Instituto:</p>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/IES-Torre-Almenara-104884248114695" class="social-button" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/ies_torre_almenara.mijas/" class="social-button" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/IesMijas" class="social-button" target="_blank" aria-label="X">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+            <h2 data-i18n="grettings">¡Gracias por ser parte de esta iniciativa!</h2>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="sticky-footer">
+        <div class="footer-content">
+            <p>Instituto de Educación Secundaria Torre Almenara</p>
+            <nav>
+                <a href="faq.html" data-i18n="faq">Preguntas frecuentes</a>
+                <a href="team.html" data-i18n="aboutUs">Sobre nosotros</a>
+                <a href="terms.html" data-i18n="terms">Terminos y condiciones</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/languageSwitcher.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rifa Escolar - Viaje de Fin de Curso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header id="sticky-header">
+        <div class="container">
+            <a href="index.html"><h5 data-i18n="schoolRaffle">Rifa Escolar</h5></a>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>
+                    <li><a href="team.html" data-i18n="aboutUs">Sobre nosotros</a></li>
+                    <li><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
+                    <li><a id="languageToggle" aria-label="Toggle Language">🌐 ES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper"> 
+
+        <section class="mt-30">            
+            <div class="image-container">
+                <img src="/img/EntregaPremio1.png" class="main-image">
+                <img src="/img/logoIES.png" class="overlay-image">
+            </div>             
+         
+            <h2>Preguntas frecuentes</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar...">
+            </div>
+            <div id="faq-list">
+                <!-- FAQ items will be dynamically added here -->
+            </div>
+        </section>
+
+        <section>
+            <h2 data-i18n="grettings">¡Gracias por ser parte de esta iniciativa!</h2>
+        </section>
+ 
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="sticky-footer">
+        <div class="footer-content">
+            <p>Instituto de Educación Secundaria Torre Almenara</p>
+            <nav>                
+                <a href="team.html" data-i18n="aboutUs">Sobre nosotros</a>
+                <a href="terms.html" data-i18n="terms">Terminos y condiciones</a>
+                <a href="ies.html" data-i18n="contactUs">Contáctanos</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/languageSwitcher.js"></script>
+    <script src="js/faq.js"></script>    
+</body>
+
+</html>

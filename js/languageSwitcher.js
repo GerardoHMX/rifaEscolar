@@ -120,12 +120,14 @@ const translations = {
     congratulations: "Congratulations! You have won one of our great prizes. We will try to contact you within the next 72 hours, or you can contact us by email. Remember to present your winning ticket or be registered in the seller's booklet as a backup.",
     toAllParticipants: "To all participants",
     thankYouForYourSupport: "Thank you for your support and for participating in the raffle. Without you, it would not have been possible. We hope you enjoyed the experience and that you will be encouraged to participate in future raffles.",
-    thankYouForBelieving:"Thank you for believing in this initiative and congratulations to the winner!",        
+    thankYouForBelieving:"Thank you for believing in this initiative and congratulations to the winner!",
+    home: "Home",
+    winner: "Winners",
   },
   es: {
     schoolRaffle: "Rifa escolar",
     aboutUs: "Sobre nosotros",
-    contactUs: "Contáctenos",
+    contactUs: "Contáctanos",
     faq: "Preguntas frecuentes",
     nextRaffle: "Próximo sorteo",
     participate: "¡Participa!",
@@ -248,6 +250,8 @@ const translations = {
     toAllParticipants: "A todos los participantes",
     thankYouForYourSupport: "Gracias por tu apoyo y por participar en la rifa. Sin ti, no habría sido posible. Esperamos que hayas disfrutado de la experiencia y que te animes a participar en futuras rifas.",
     thankYouForBelieving:"¡Gracias por creer en esta iniciativa y enhorabuena al ganador!",
+    home: "Inicio",
+    winner: "Ganadores",
   },
 };
 

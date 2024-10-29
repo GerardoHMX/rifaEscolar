@@ -103,6 +103,10 @@ const translations = {
     here: "here",
     ticketPrice: "The ticket price is €10",
     home: "Go to home",
+    soldOut: "Tickets Sold",
+    soldTickets: "Sold Tickets",
+    aboutRaffle: "Raffle details",
+    lastUpdate: "Last update",
   },
   es: {
     schoolRaffle: "Rifa escolar",
@@ -212,6 +216,10 @@ const translations = {
     here: "aquí",
     ticketPrice: "El precio del boleto es de 10€",
     home: "Ir al inicio",
+    soldOut: "Boletos vendidos",
+    soldTickets: "Consultar boletos vendidos",
+    aboutRaffle: "Detalles del sorteo",
+    lastUpdate: "Feha de última actualización",
   },
 };
 

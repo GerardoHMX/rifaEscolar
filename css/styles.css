@@ -32,13 +32,14 @@ h2,
 h3,
 h5 {
     color: #4caf50;
-    line-height: 34px;
+    line-height: 35px;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     font-size: clamp(3rem, 0.6vw, 0.6vw);
+    text-align: center;
 }
 
 h2 {
@@ -377,6 +378,7 @@ section .column {
 
 #main-nav ul li {
     margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 #main-nav ul li button {
@@ -453,11 +455,10 @@ main {
         flex-direction: column;
     }
 
-
-    #main-nav ul li button {
+    #main-nav ul li a {
         width: 100%;
         text-align: left;
-        padding: 15px 20px;
+        padding-left: 15px;
     }
 }
 
@@ -649,6 +650,7 @@ main {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    margin-right: 10px;
 }
 
 .button.primary {
@@ -658,11 +660,11 @@ main {
 }
 
 .button.primary:hover {
-    background-color: #07545a;
+    background-color: #07545a;    
 }
 
 .button.secondary {
-    background-color: #f8f9fa;
+    background-color: #d5d6d8;
     color: #333;
 }
 
@@ -761,9 +763,6 @@ main {
     color: #666;
     text-transform: uppercase;
 }
-
-
-
 
 .search-container {
     margin-bottom: 20px;
@@ -898,6 +897,7 @@ canvas {
     font-size: 5rem;
     color: #f86f31;
     margin: 0;
+    line-height: 60px;
 }
 
 .terms ul,  .terms li {
@@ -910,8 +910,7 @@ canvas {
 .section-link {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Coloca los enlaces en los extremos */
-    padding: 0 20px; /* Espaciado a los lados */
+    justify-content: space-between;
 }
 
 .link {
@@ -926,10 +925,6 @@ canvas {
 .link .flecha {
     display: inline-block;
     transition: transform 0.3s ease;
-}
-
-.link-izquierda {
-    margin-left: 20px;
 }
 
 .link-derecha {
@@ -952,11 +947,18 @@ canvas {
     color: #007BFF;
 }
 
-.notes {
+.notes, .comments {
     color: #888;
     font-style: italic;
     font-size: 0.8rem;
+}
+
+.notes { 
     text-align: justify;
+}
+
+.comments {
+    text-align: center;
 }
 
 /* social buttons */
@@ -985,4 +987,82 @@ canvas {
 .fa.fa-twitter::before{
 	content:"𝕏";
 	font-size:1.2em;
+}
+
+
+.counter-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.progress-bar {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 5px auto 35px auto;
+    height: 20px;
+    overflow: hidden;
+}
+#progress-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+/*tickets*/
+.tickets-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    gap: 2px;
+}
+.espacio {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.disponible { background-color: white; }
+.vendido { background-color: #FFC107; }
+.reservado { background-color: #9E9E9E; }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 30% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

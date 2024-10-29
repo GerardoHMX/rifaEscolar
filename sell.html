@@ -7,15 +7,12 @@
     <title>Rifa Escolar - Viaje de Fin de Curso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
     <header id="sticky-header">
         <div class="container">
-            <a href="index.html">
-                <h5 data-i18n="schoolRaffle">Rifa Escolar</h5>
-            </a>
+            <a href="index.html"><h5 data-i18n="schoolRaffle">Rifa Escolar</h5></a>
             <button id="menu-toggle" aria-label="Toggle menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -37,37 +34,56 @@
     </header>
 
     <main class="content-wrapper">
-        <canvas id="canvas" style="position: absolute;"></canvas>
-        <section class="mt-50">
-            <h2>¡Felicidades al Ganador del Sorteo!</h2>
-            <p>Nos complace anunciar que tenemos un ganador del sorteo, gracias a tu apoyo, esta iniciativa ha sido un
-                éxito, acercándonos a nuestra meta de financiar el viaje de fin de curso.</p>
-            <h2>Boleto </h2>            
+
+        <section class="mt-30">
+            <h1 data-i18n="firstRaffle" class="winner">
+                Primer sorteo
+            </h1>
         </section>
-        <section class="mt-50">
-            <h1> <span class="winner"> 0 0 0 </span> </h1>
-            <h2>ganador del sorteo</h2>
-            <p>¡Enhorabuena! Te has llevado uno de nuestros grandes premios.Intentaremos contactarte durante las
-                próximas 72 horas, o puedes comunicarte con nosotros a través del correo electrónico. Recuerda presentar
-                tu boleto ganador o estar registrado en el talonario del vendedor como respaldo.</p>
+ 
+        <div class="counter-container">
+            <div class="text-center">Boletos Vendidos: <span id="ticket-count">0</span>/1000</div>
+            <div class="comments">            
+                <span data-i18n="lastUpdate">Feha de última actualización:</span> 17 de diciembre de 2024
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            
+        </div>        
+
+        <section class="section-link">
+            <a href="gift.html" class="link link-izquierda">
+                <span class="flecha">←</span> <span data-i18n="aboutRaffle">Detalles del sorteo</span>
+            </a>        
+            <a></a>
         </section>
-        <section class="mt-50">
-            <h2>A todos los participantes</h2>
-            <p>Gracias por tu apoyo y por participar en la rifa. Sin ti, no habría sido posible. Esperamos que hayas
-                disfrutado de la experiencia y que te animes a participar en futuras rifas.</p>            
+
+        <section class="tickets-container">
+            <div id="grid" class="grid"></div>
         </section>
-        <section class="mt-50" style="margin-bottom: 35px;">
-            <h2>¡Gracias por creer en esta iniciativa y enhorabuena al ganador!</h2>
+
+        <section>
+            <h2 data-i18n="grettings">¡Gracias por ser parte de esta iniciativa!</h2>
         </section>
+    
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Detalles del boleto</h2>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+
     </main>
 
     <!-- FOOTER -->
     <footer id="sticky-footer">
         <div class="footer-content">
-            <p><a href="https://www.iestorrealmenara.es/">Instituto de Educación Secundaria Torre Almenara</a></p>
+            <p>Instituto de Educación Secundaria Torre Almenara</p>
             <nav>
                 <a href="faq.html" data-i18n="faq">Preguntas frecuentes</a>
-                <a href="terms.html" data-i18n="terms">Terminos y condiciones</a>
+                <a href="team.html" data-i18n="aboutUs">Sobre nosotros</a>
                 <a href="ies.html" data-i18n="contactUs">Contáctanos</a>
             </nav>
         </div>
@@ -75,7 +91,8 @@
 
     <script src="js/script.js"></script>
     <script src="js/languageSwitcher.js"></script>
-    <script src="js/confetti.js"></script>
+    <script src="js/tickets.js"></script> 
+
 </body>
 
 </html>

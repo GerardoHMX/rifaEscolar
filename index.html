@@ -24,6 +24,7 @@
             <nav id="main-nav">
                 <ul>
                     <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>
+                    <li><a href="trip.html" data-i18n="motivation">Motivación</a></li>
                     <li><a href="team.html" data-i18n="aboutUs">Sobre nosotros</a></li>
                     <li><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
                     <li><a id="languageToggle" aria-label="Toggle Language">🌐 ES</a></li>
@@ -32,15 +33,17 @@
         </div>
     </header>
 
-    <main class="content-wrapper"> 
+    <main class="content-wrapper">
 
-        <section class="mt-30">            
+        <section class="mt-30">
             <div class="image-container">
                 <img src="img/PrimerVenta.png" class="main-image">
                 <img src="img/logoIES.png" class="overlay-image">
             </div>
             <p>
-                <span data-i18n="raffleObjective">Los alumnos de 4º de ESO Curso 2024/25 del IES Torre Almenara estamos organizando una Rifa Escolar con el objetivo de recaudar fondos para nuestro emocionante viaje de fin de curso a Tenerife, que se celebrará del 23 al 27 de abril del 2025.</span>
+                <span data-i18n="raffleObjective">Los alumnos de 4º de ESO Curso 2024/25 del IES Torre Almenara estamos
+                    organizando una Rifa Escolar con el objetivo de recaudar fondos para nuestro emocionante viaje de
+                    fin de curso a Tenerife, que se celebrará del 23 al 27 de abril del 2025.</span>
                 <a href="trip.html" data-i18n="raffleDetail">Consulta todos los detalles aquí.</a>
             </p>
             <p data-i18n="raffleInvitation">
@@ -51,7 +54,7 @@
         </section>
 
         <section class="colums-container mt-30">
-            <section class="column countdown-container"> 
+            <section class="column countdown-container">
                 <h2 data-i18n="nextRaffle">Próximo sorteo</h2>
                 <div class="countdown" id="countdown">
                     <div class="countdown-item">
@@ -70,21 +73,21 @@
                         <span class="countdown-value" id="seconds">00</span>
                         <span class="countdown-label" data-i18n="seconds">Segundos</span>
                     </div>
-                </div> 
+                </div>
             </section>
             <section class="column">
                 <ul>
-                    <li data-i18n="nextRaffleDate">17 de Diciembre de 2024</li>                    
+                    <li data-i18n="nextRaffleDate">17 de Diciembre de 2024</li>
                     <li data-i18n="raffleTicketsAvailability">Adquiérelos durante Noviembre y Diciembre</li>
                     <li><a href="gift.html" data-i18n="raffleDetail">Consulta todos los detalles aquí.</a></li>
                 </ul>
             </section>
         </section>
- 
+
         <section>
             <h2 data-i18n="participate">
                 ¡Participa!
-            </h2> 
+            </h2>
         </section>
 
         <section>
@@ -109,7 +112,7 @@
                 </li>
             </ul>
         </section>
- 
+
         <button id="openDialog" style="visibility: hidden;"></button>
 
         <div id="modalOverlay" class="modal-overlay" aria-hidden="true">
@@ -119,12 +122,13 @@
                 <div id="dialogContent">
                     <p>
                         <span>¡El boleto ganador ya ha sido anunciado! 🎉</span>
-                        <a href="winners.html">Consulta ahora para ver si eres el afortunado.</a>.
+                        <a>Consulta ahora para ver si eres el afortunado.</a>.
                         <span>¡Gracias por tu apoyo y mucha suerte! 🍀</span>
                     </p>
                 </div>
                 <div class="dialog-actions">
-                    <button id="cancelButton" class="button primary">más tarde</button> 
+                    <a href="winners.html" id="okButton" class="button primary">Ver</a>
+                    <button id="cancelButton" class="button secondary">más tarde</button>
                 </div>
             </div>
         </div>
@@ -148,9 +152,9 @@
     <script src="js/countDown.js"></script>
     <script src="js/dialog.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const dialog = document.getElementById("openDialog"); 
-            dialog.click();  
+        document.addEventListener("DOMContentLoaded", function () {
+            const dialog = document.getElementById("openDialog");
+            dialog.click();
         });
     </script>
 </body>

@@ -107,6 +107,20 @@ const translations = {
     soldTickets: "Sold Tickets",
     aboutRaffle: "Raffle details",
     lastUpdate: "Last update",
+    motivation: "Motivation",
+    congratulationsWinner: "Congratulations to the Winner of the Raffle",
+    winningTicket:"The winning ticket has been announced!",
+    luckyOne: "Check now to see if you are the lucky one.",
+    goodLuck:"Thank you for your support and good luck!",
+    see: "see",
+    laterOn: "later on",
+    weHaveAWinner:"We are pleased to announce that we have a winner of the raffle, thanks to your support, this initiative has been a success, bringing us closer to our goal of funding the end-of-year trip.",
+    ticket: "Ticket",
+    raffleWinner: "Raffle Winner",
+    congratulations: "Congratulations! You have won one of our great prizes. We will try to contact you within the next 72 hours, or you can contact us by email. Remember to present your winning ticket or be registered in the seller's booklet as a backup.",
+    toAllParticipants: "To all participants",
+    thankYouForYourSupport: "Thank you for your support and for participating in the raffle. Without you, it would not have been possible. We hope you enjoyed the experience and that you will be encouraged to participate in future raffles.",
+    thankYouForBelieving:"Thank you for believing in this initiative and congratulations to the winner!",        
   },
   es: {
     schoolRaffle: "Rifa escolar",
@@ -220,18 +234,34 @@ const translations = {
     soldTickets: "Consultar boletos vendidos",
     aboutRaffle: "Detalles del sorteo",
     lastUpdate: "Feha de última actualización",
+    motivation: "Motivación",
+    congratulationsWinner: "Felicidades al Ganador del Sorteo",
+    winningTicket:"¡El boleto ganador ha sido anunciado!",
+    luckyOne: "Consulta ahora para ver si eres el afortunado.",
+    goodLuck:"¡Gracias por tu apoyo y mucha suerte!",
+    see: "ver",
+    laterOn: "más tarde",
+    weHaveAWinner: "Nos complace anunciar que tenemos un ganador del sorteo, gracias a tu apoyo, esta iniciativa ha sido un éxito, acercándonos a nuestra meta de financiar el viaje de fin de curso.",
+    ticket: "Boleto",
+    raffleWinner: "Ganador del sorteo",
+    congratulations: "¡Enhorabuena! Te has llevado uno de nuestros grandes premios.Intentaremos contactarte durante las próximas 72 horas, o puedes comunicarte con nosotros a través del correo electrónico. Recuerda presentar tu boleto ganador o estar registrado en el talonario del vendedor como respaldo.",
+    toAllParticipants: "A todos los participantes",
+    thankYouForYourSupport: "Gracias por tu apoyo y por participar en la rifa. Sin ti, no habría sido posible. Esperamos que hayas disfrutado de la experiencia y que te animes a participar en futuras rifas.",
+    thankYouForBelieving:"¡Gracias por creer en esta iniciativa y enhorabuena al ganador!",
   },
 };
 
 // Function to change the language
-function changeLanguage() {
-  // Toggle between 'en' and 'es'
+function changeLanguage() {  
   currentLanguage = currentLanguage === "en" ? "es" : "en";
+  setCurrentLanguage(currentLanguage); 
+}
 
-  // Update the lang attribute of the HTML tag
+function setCurrentLanguage(language) {
+  currentLanguage = language;
   document.documentElement.lang = currentLanguage;
+  localStorage.setItem('currentLanguage', currentLanguage);
 
-  // Select all elements with a data-i18n attribute
   const elements = document.querySelectorAll("[data-i18n]");
 
   // Update their text content based on the selected language
@@ -255,11 +285,20 @@ function changeLanguage() {
   languageToggle.setAttribute(
     "aria-label",
     `Toggle Language to ${currentLanguage === "en" ? "Spanish" : "English"}`
-  );
+  ); 
 }
 
 // Add event listener to the language toggle button
 document.addEventListener("DOMContentLoaded", () => {
   const languageToggle = document.getElementById("languageToggle");
   languageToggle.addEventListener("click", changeLanguage);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  currentLanguage = localStorage.getItem('currentLanguage');
+  if (currentLanguage) {
+      setCurrentLanguage(currentLanguage);
+  } else {      
+      setCurrentLanguage('es');
+  }
 });

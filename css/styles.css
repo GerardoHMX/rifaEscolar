@@ -168,10 +168,12 @@ section .column {
 .image-container {
     position: relative;
     width: 100%;
+    align-items: center;
+    text-align: center;
 }
 
 .main-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -625,7 +627,7 @@ main {
 .modal-dialog {
     background-color: #fff;
     border-radius: 4px;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     max-width: 400px;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

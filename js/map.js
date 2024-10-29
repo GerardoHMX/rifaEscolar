@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         center: [lat, lon],
         zoom: 16,
         zoomControl: true,
-        dragging: true,
+        dragging: false,
         touchZoom: false,
         scrollWheelZoom: false,
         doubleClickZoom: false,

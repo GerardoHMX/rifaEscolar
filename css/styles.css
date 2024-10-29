@@ -376,11 +376,12 @@ section .column {
     display: flex;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 #main-nav ul li {
     margin-left: 20px;
-    margin-bottom: 15px;
+    text-align: center;
 }
 
 #main-nav ul li button {
@@ -460,7 +461,12 @@ main {
     }
 
     #main-nav ul {
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: start;
+    }
+
+    #main-nav ul li {
+        margin-bottom: 10px;
     }
 
     #main-nav ul li a {
@@ -468,6 +474,7 @@ main {
         text-align: left;
         padding-left: 15px;
     }
+ 
 }
 
 /* Styles for the ies section */
@@ -565,7 +572,7 @@ main {
     flex-shrink: 0;
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0 15px 0;
     z-index: 1000;
 }
 
@@ -575,7 +582,7 @@ main {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0px 15px 0px 15px;
 }
 
 .footer-content p {
@@ -597,14 +604,14 @@ main {
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .footer-content {
         flex-direction: column;
         text-align: center;
+        font-size: 16px;
     }
-
     .footer-content nav {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 }
 

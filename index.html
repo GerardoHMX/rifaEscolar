@@ -23,21 +23,21 @@
             </button>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html" data-i18n="home" class="hide">Inicio</a></li>
-                    <li><a href="gift.html" data-i18n="nextRaffle" class="hide">Próximo sorteo</a></li>
-                    <li><a href="sell.html" data-i18n="soldOut" class="hide">Boletos vendidos</a></li>
-                    <li><a href="winners.html" data-i18n="winner" class="hide">Ganadores</a></li>
+                    <li class="hide"><a href="index.html" data-i18n="home">Inicio</a></li>
+                    <li class="hide"><a href="gift.html" data-i18n="nextRaffle">Próximo sorteo</a></li>
+                    <li class="hide"><a href="sell.html" data-i18n="soldOut">Boletos vendidos</a></li>
+                    <li class="hide"><a href="winners.html" data-i18n="winner">Ganadores</a></li>
                     <li><a href="trip.html" data-i18n="motivation">Motivación</a></li>
-                    <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>                    
+                    <li><a href="faq.html" data-i18n="faq">Preguntas frecuentes</a></li>
                     <li><a href="team.html" data-i18n="aboutUs">Sobre nosotros</a></li>
-                    <li><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
+                    <li class="hide"><a href="ies.html" data-i18n="contactUs">Contáctanos</a></li>
                     <li><a id="languageToggle" aria-label="Toggle Language">🌐 ES</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="content-wrapper">
+    <main class="content-wrapper" id="contentWrapper">
 
         <section class="mt-30">
             <div class="image-container">
@@ -144,9 +144,9 @@
         <div class="footer-content">
             <p>Instituto de Educación Secundaria Torre Almenara</p>
             <nav>
-                <a href="faq.html" data-i18n="faq">Preguntas frecuentes</a>
-                <a href="terms.html" data-i18n="terms">Terminos y condiciones</a>
-                <a href="ies.html" data-i18n="contactUs">Contáctanos</a>
+                <a href="faq.html" data-i18n="faq" class="hide-item">Preguntas frecuentes</a>
+                <a href="terms.html" data-i18n="terms" class="hide-item">Terminos y condiciones</a>
+                <a href="ies.html" data-i18n="contactUs" class="hide-item">Contáctanos</a>
             </nav>
         </div>
     </footer>
